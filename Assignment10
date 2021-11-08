@@ -1,0 +1,5 @@
+isim = input("isminizi giriniz ")
+if isim == "Joseph":
+  print("Hello, Joseph! The password is : W@12")
+else:
+  print("Hello, {} See you later.".format(isim))
