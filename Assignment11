@@ -3,17 +3,14 @@ chronic = input("Do you have a severe chronic disease?")
 immune = input("Is your immune system too weak?")
 if cigarette == "yes":
   cigarette = False
-else:
-  cigarette = True
 if chronic == "yes":
   chronic = False
-else:
-  chronic = True
 if immune == "yes":
   immune = False
-else:
-  immune = True
 if cigarette and chronic and immune:
   print("You are not in risky group")
 else:
   print("You are in risky group")
+print(bool(cigarette))
+print(bool(chronic))
+print(bool(immune))
