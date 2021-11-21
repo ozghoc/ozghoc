@@ -1,13 +1,10 @@
 while True:
-    number = input("Enter a number: ")
-    try:
-        val = int(number)
-        if val < 0:
-            print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
-            continue
-        break
-    except ValueError:
-        print("	 It is an invalid entry. Don't use non-numeric, float, or negative values!")
+  val = input("Please enter a value: ")
+  if val.isnumeric():
+    break
+  else:
+    print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
+val=int(val)
 sum = 0
 strifarm = str(val)
 lenifarm = len(strifarm)
