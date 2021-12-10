@@ -1,0 +1,12 @@
+fib = []
+toplam = 0
+fibo1 = 0
+fibo2 = 1
+fib.append(fibo1)
+fib.append(fibo2)
+while fibo1 < 34:
+    toplam = fibo1 + fibo2 
+    fib.append(toplam)
+    fibo1 = fibo2
+    fibo2 = toplam
+print(fib)
