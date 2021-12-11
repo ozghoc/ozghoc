@@ -1,0 +1,17 @@
+cand_number = int(input("Please enter a number: "))
+listt=[]
+listad=[]
+for number in range(cand_number+1):
+  div = 1
+  flag = False
+  while div < number-1:
+    div = div + 1
+    if number % div == 0:
+      flag = True
+      break
+  if flag:
+    listad.append(number)
+  else:
+    listt.append(number)
+print(listt)
+print(listad)
